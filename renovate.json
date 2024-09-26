@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":automergeMinor", ":enableVulnerabilityAlerts"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["aws-*"],
+      "groupName": "AWS SDK monorepo"
+    },
+    {
+      "matchPackagePatterns": ["tracing-*"],
+      "excludePackageNames": ["reqwest-tracing", "tracing-axiom"],
+      "groupName": "Tracing monorepo"
+    },
+    {
+      "matchPackagePatterns": ["sentry-*"],
+      "groupName": "Sentry monorepo"
+    },
+    {
+      "matchPackageNames": ["serde", "serde-derive"],
+      "groupName": "Serde"
+    }
+  ]
+}

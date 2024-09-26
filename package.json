@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "@storipress/deployer",
+  "packageManager": "yarn@4.5.0",
+  "dependencies": {
+    "wrangler": "3.78.10"
+  }
+}

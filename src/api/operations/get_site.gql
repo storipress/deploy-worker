@@ -1,0 +1,6 @@
+query GetSite {
+  site {
+    customer_site_domain
+    customer_site_storipress_url
+  }
+}

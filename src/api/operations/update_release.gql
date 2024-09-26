@@ -1,0 +1,6 @@
+mutation UpdateRelease($input: UpdateReleaseInput!) {
+  updateRelease(input: $input) {
+    id
+    state
+  }
+}
